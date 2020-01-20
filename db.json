@@ -1,12 +1,639 @@
 {
-  "posts": [
+  "products": [
     {
-      "title": "CopyRight Automatico",
-      "tags": "[JS]"
+      "id": 1,
+      "name": "Body + Calcinha bunda rica - Meu Primeiro Natal",
+      "description": "Body Personalizado Lado Dicá!! \n A época mais encantadora do ano está quase chegando! \n Na Lado Dica você antecipa o look do seu baby , com as opções mais lindas e fofas!!\n Apresentamos o Kit Meu 1° Natal Feminino \n Composto por body confeccionado com bordado e aplique acompanha essa charmosa calcinha bunda rica vermelha \n Tecido: 100% Algodão \n Aplique: Tricoline 100% Algodão e Feltro \n Bordado: Eletronico com aplique \n Laços: Cetim \n Cor: Branco / Vermelho\n Tamanhos disponíveis: P/M/G /GG ( confira as dimensões nas imagens )\n Atenção!!! Produto Personalizado!!!\n Vendemos sob encomenda, compre pelo nosso anúncio e envie o nome do bebê por mensagem. Se procura algo específico e com suas idéias, entre em contato conosco e vamos verificar a disponibilidade de produzir.\n Caso tenha dúvidas, entre em contato!!\n Boas compras!!\n Peso: 150 g\n Código do produto: 10D9252\n Adicionado em: 07/11/2019",
+      "price": "59,90",
+      "discount": 10,
+      "sizes": [
+        {
+          "id": 1,
+          "description": "Pequeno",
+          "initials": "P"
+        },
+        {
+          "id": 2,
+          "description": "Médio",
+          "initials": "M"
+        },
+        {
+          "id": 3,
+          "description": "Grande",
+          "initials": "G"
+        },
+        {
+          "id": 4,
+          "description": "Extra Grande",
+          "initials": "GG"
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Meninas"
+      },
+      "pics": [
+        {
+          "id": 1,
+          "name": "body-calcinha-bunda-rica-natal-bebe-personalizado",
+          "path": "https://user-images.githubusercontent.com/21282437/72762381-1f1c6100-3bbe-11ea-985f-bbc89e57c612.jpeg"
+        },
+        {
+          "id": 2,
+          "name": "body-calcinha-bunda-rica-natal-body-mesversario",
+          "path": "https://user-images.githubusercontent.com/21282437/72762382-1fb4f780-3bbe-11ea-9586-ec4cdd70a610.jpeg"
+        },
+        {
+          "id": 3,
+          "name": "body-calcinha-bunda-rica-natal-body",
+          "path": "https://user-images.githubusercontent.com/21282437/72762383-1fb4f780-3bbe-11ea-8b82-90b75d2a3236.jpeg"
+        },
+        {
+          "id": 4,
+          "name": "body-calcinha-bunda-rica-natal-kit-body-meses",
+          "path": "https://user-images.githubusercontent.com/21282437/72762384-1fb4f780-3bbe-11ea-96ea-75d4478574f3.jpeg"
+        },
+        {
+          "id": 5,
+          "name": "body-calcinha-bunda-rica-natal-roupa-natal",
+          "path": "https://user-images.githubusercontent.com/21282437/72762385-1fb4f780-3bbe-11ea-8f9b-1476d7221a8d.jpeg"
+        }
+      ],
+      "ref": "10D9252"
     },
     {
-      "title": "HtmlWebpackPlugin Multiples HTML files",
-      "tags": "[JS, webpack]"
+      "id": 2,
+      "name": "Conjunto Body + Fralda de boca + Sapatinho - Leãozinho",
+      "description": "Body Personalizado Lado Dicá!! \n A época mais encantadora do ano está quase chegando! \n Na Lado Dica você antecipa o look do seu baby , com as opções mais lindas e fofas!!\n Apresentamos o Kit Meu 1° Natal Feminino \n Composto por body confeccionado com bordado e aplique acompanha essa charmosa calcinha bunda rica vermelha \n Tecido: 100% Algodão \n Aplique: Tricoline 100% Algodão e Feltro \n Bordado: Eletronico com aplique \n Laços: Cetim \n Cor: Branco / Vermelho\n Tamanhos disponíveis: P/M/G /GG ( confira as dimensões nas imagens )\n Atenção!!! Produto Personalizado!!!\n Vendemos sob encomenda, compre pelo nosso anúncio e envie o nome do bebê por mensagem. Se procura algo específico e com suas idéias, entre em contato conosco e vamos verificar a disponibilidade de produzir.\n Caso tenha dúvidas, entre em contato!!\n Boas compras!!\n Peso: 150 g\n Código do produto: 10D9252\n Adicionado em: 07/11/2019",
+      "price": "79,90",
+      "discount": 7,
+      "sizes": [
+        {
+          "id": 1,
+          "description": "Pequeno",
+          "initials": "P"
+        },
+        {
+          "id": 2,
+          "description": "Médio",
+          "initials": "M"
+        },
+        {
+          "id": 3,
+          "description": "Grande",
+          "initials": "G"
+        },
+        {
+          "id": 4,
+          "description": "Extra Grande",
+          "initials": "GG"
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Meninos"
+      },
+      "pics": [
+        {
+          "id": 1,
+          "name": "conjunto-body-fralda-de-boca-sapatinho-leaozinho (1)",
+          "path": "https://user-images.githubusercontent.com/21282437/72762612-082a3e80-3bbf-11ea-9ba8-e884d6c40d04.jpeg"
+        },
+        {
+          "id": 2,
+          "name": "conjunto-body-fralda-de-boca-sapatinho-leaozinho (2)",
+          "path": "https://user-images.githubusercontent.com/21282437/72762613-082a3e80-3bbf-11ea-8c4d-9126da3f0b2d.jpeg"
+        },
+        {
+          "id": 3,
+          "name": "conjunto-body-fralda-de-boca-sapatinho-leaozinho (3)",
+          "path": "https://user-images.githubusercontent.com/21282437/72762614-082a3e80-3bbf-11ea-834e-bd2148980384.jpeg"
+        },
+        {
+          "id": 4,
+          "name": "conjunto-body-fralda-de-boca-sapatinho-leaozinho-mesversario-personalizado",
+          "path": "https://user-images.githubusercontent.com/21282437/72762615-082a3e80-3bbf-11ea-9134-9770ab781c1a.jpeg"
+        },
+        {
+          "id": 5,
+          "name": "conjunto-body-fralda-de-boca-sapatinho-leaozinho",
+          "path": "https://user-images.githubusercontent.com/21282437/72762617-082a3e80-3bbf-11ea-9a8a-98edb83e5aa4.jpeg"
+        }
+      ],
+      "ref": "103AE74"
+    },
+    {
+      "id": 3,
+      "name": "Sapatilha bebe de fita estilo ballet - Vermelha",
+      "description": "As sapatilhas mais lindas e fofas você encontra na Lado DiCá.\n Para sua baby arrasar nas ocasiões especiais!\n *Natal\n *Reveillon\n *Batizado\n *Aniversário\n Sapatilha confeccionado em cetim estruturada, com forro em elanca, acabamento com viés de algodão, fechamento em fita de cetim\n Cor: Vermelho\n OBS: CONSULTAR A DISPONIBILIDADE DE TAMANHOS NA HORA DA COMPRA\n Tamanhos: 12 ao 18\n Medidas externa\n N° 12 – 9 cm (Rescém Nascido e Reborn)\n Nº 13 – 10 cm (0-2 meses)\n Nº 14 – 10,5 cm (2-4 meses)\n Nº 15 – 11 cm (4-6 meses)\n Nº 16 – 11,7 cm (6-7 meses)\n Nº 17 – 12,5 cm (8-10 meses)\n Nº 18 – 13 cm (10-12 meses)\n Peso: 100 g\n Código do produto: 1120845\n Adicionado em: 11/12/2019",
+      "price": "79,90",
+      "discount": 12,
+      "sizes": [
+        {
+          "id": 5,
+          "description": "N° 12 – 9 cm (Rescém Nascido e Reborn)",
+          "initials": "N° 12"
+        },
+        {
+          "id": 6,
+          "description": "Nº 13 – 10 cm (0-2 meses)",
+          "initials": "N° 13"
+        },
+        {
+          "id": 7,
+          "description": "Nº 14 – 10,5 cm (2-4 meses)",
+          "initials": "N° 14"
+        },
+        {
+          "id": 8,
+          "description": "Nº 15 – 11 cm (4-6 meses)",
+          "initials": "N° 15"
+        },
+        {
+          "id": 9,
+          "description": "Nº 16 – 11,7 cm (6-7 meses)",
+          "initials": "N° 16"
+        },
+        {
+          "id": 10,
+          "description": "Nº 17 – 12,5 cm (8-10 meses)",
+          "initials": "N° 17"
+        },
+        {
+          "id": 11,
+          "description": "Nº 18 – 13 cm (10-12 meses)",
+          "initials": "N° 18"
+        }
+      ],
+      "category": {
+        "id": 5,
+        "name": "Sapatinhos"
+      },
+      "pics": [
+        {
+          "id": 1,
+          "name": "sapatilha-bebe-de-fita-estilo-ballet-vermelha-sapatilha-de-fita",
+          "path": "https://user-images.githubusercontent.com/21282437/72762985-6f94be00-3bc0-11ea-81aa-c4e1d4fca5c3.jpeg"
+        }
+      ],
+      "ref": "1120845"
+    },
+    {
+      "id": 4,
+      "name": "Kit fralda de boca e ombro - Girafa",
+      "description": "Toda mamãe sabe, que um joguinho de fraldas bem reforçada e essencial para compor o enxoval do baby tão esperado! Na Lado DiCá você encontra lindos modelos de fraldas bordadas, super resistentes e duram muito!\n Fraldas duplas super reforçadas\n Kit composto de:\n 1 Fralda de boca medindo 35x35cm\n 1 Fralda de ombro medindo 70x70cm\n Bordado: Eletronico com aplique em tecido ( fazemos no tema que vc preferir )\n OBS: ENVIE MENSAGEM PARA CONSULTAR DISPONIBILIDADE DE OUTRAS CORES E TEMAS\n Atenção!!! Produto Personalizado!!!\n Vendemos sob encomenda, compre pelo nosso anúncio e envie o nome do bebê por mensagem. Se procura algo específico e com suas idéias, entre em contato conosco e vamos verificar a disponibilidade de produzir.\n Caso tenha dúvidas, entre em contato!!\n Boas compras!!\n Peso: 300 g\n Código do produto: 10A3205\n Adicionado em: 15/10/2019",
+      "price": "49,90",
+      "discount": 15.5,
+      "sizes": [],
+      "category": {
+        "id": 5,
+        "name": "Fraldas"
+      },
+      "pics": [
+        {
+          "id": 1,
+          "name": "kit-fralda-de-boca-e-ombro-girafa-fralda-de-boca",
+          "path": "https://user-images.githubusercontent.com/21282437/72763178-4294db00-3bc1-11ea-8c98-6f5a7c61a27e.jpeg"
+        },
+        {
+          "id": 2,
+          "name": "kit-fralda-de-boca-e-ombro-girafa-fralda-dupla",
+          "path": "https://user-images.githubusercontent.com/21282437/72763179-4294db00-3bc1-11ea-83b0-bb69d0f23da5.jpeg"
+        }
+      ],
+      "ref": "1520848"
+    },
+    {
+      "id": 5,
+      "name": "Body + Calcinha bunda rica - Meu Primeiro Natal",
+      "description": "Body Personalizado Lado Dicá!! \n A época mais encantadora do ano está quase chegando! \n Na Lado Dica você antecipa o look do seu baby , com as opções mais lindas e fofas!!\n Apresentamos o Kit Meu 1° Natal Feminino \n Composto por body confeccionado com bordado e aplique acompanha essa charmosa calcinha bunda rica vermelha \n Tecido: 100% Algodão \n Aplique: Tricoline 100% Algodão e Feltro \n Bordado: Eletronico com aplique \n Laços: Cetim \n Cor: Branco / Vermelho\n Tamanhos disponíveis: P/M/G /GG ( confira as dimensões nas imagens )\n Atenção!!! Produto Personalizado!!!\n Vendemos sob encomenda, compre pelo nosso anúncio e envie o nome do bebê por mensagem. Se procura algo específico e com suas idéias, entre em contato conosco e vamos verificar a disponibilidade de produzir.\n Caso tenha dúvidas, entre em contato!!\n Boas compras!!\n Peso: 150 g\n Código do produto: 10D9252\n Adicionado em: 07/11/2019",
+      "price": "59,90",
+      "discount": 10,
+      "sizes": [
+        {
+          "id": 1,
+          "description": "Pequeno",
+          "initials": "P"
+        },
+        {
+          "id": 2,
+          "description": "Médio",
+          "initials": "M"
+        },
+        {
+          "id": 3,
+          "description": "Grande",
+          "initials": "G"
+        },
+        {
+          "id": 4,
+          "description": "Extra Grande",
+          "initials": "GG"
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Meninas"
+      },
+      "pics": [
+        {
+          "id": 1,
+          "name": "body-calcinha-bunda-rica-natal-bebe-personalizado",
+          "path": "https://user-images.githubusercontent.com/21282437/72762381-1f1c6100-3bbe-11ea-985f-bbc89e57c612.jpeg"
+        },
+        {
+          "id": 2,
+          "name": "body-calcinha-bunda-rica-natal-body-mesversario",
+          "path": "https://user-images.githubusercontent.com/21282437/72762382-1fb4f780-3bbe-11ea-9586-ec4cdd70a610.jpeg"
+        },
+        {
+          "id": 3,
+          "name": "body-calcinha-bunda-rica-natal-body",
+          "path": "https://user-images.githubusercontent.com/21282437/72762383-1fb4f780-3bbe-11ea-8b82-90b75d2a3236.jpeg"
+        },
+        {
+          "id": 4,
+          "name": "body-calcinha-bunda-rica-natal-kit-body-meses",
+          "path": "https://user-images.githubusercontent.com/21282437/72762384-1fb4f780-3bbe-11ea-96ea-75d4478574f3.jpeg"
+        },
+        {
+          "id": 5,
+          "name": "body-calcinha-bunda-rica-natal-roupa-natal",
+          "path": "https://user-images.githubusercontent.com/21282437/72762385-1fb4f780-3bbe-11ea-8f9b-1476d7221a8d.jpeg"
+        }
+      ],
+      "ref": "10D9252"
+    },
+    {
+      "id": 6,
+      "name": "Conjunto Body + Fralda de boca + Sapatinho - Leãozinho",
+      "description": "Body Personalizado Lado Dicá!! \n A época mais encantadora do ano está quase chegando! \n Na Lado Dica você antecipa o look do seu baby , com as opções mais lindas e fofas!!\n Apresentamos o Kit Meu 1° Natal Feminino \n Composto por body confeccionado com bordado e aplique acompanha essa charmosa calcinha bunda rica vermelha \n Tecido: 100% Algodão \n Aplique: Tricoline 100% Algodão e Feltro \n Bordado: Eletronico com aplique \n Laços: Cetim \n Cor: Branco / Vermelho\n Tamanhos disponíveis: P/M/G /GG ( confira as dimensões nas imagens )\n Atenção!!! Produto Personalizado!!!\n Vendemos sob encomenda, compre pelo nosso anúncio e envie o nome do bebê por mensagem. Se procura algo específico e com suas idéias, entre em contato conosco e vamos verificar a disponibilidade de produzir.\n Caso tenha dúvidas, entre em contato!!\n Boas compras!!\n Peso: 150 g\n Código do produto: 10D9252\n Adicionado em: 07/11/2019",
+      "price": "79,90",
+      "discount": 7,
+      "sizes": [
+        {
+          "id": 1,
+          "description": "Pequeno",
+          "initials": "P"
+        },
+        {
+          "id": 2,
+          "description": "Médio",
+          "initials": "M"
+        },
+        {
+          "id": 3,
+          "description": "Grande",
+          "initials": "G"
+        },
+        {
+          "id": 4,
+          "description": "Extra Grande",
+          "initials": "GG"
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Meninos"
+      },
+      "pics": [
+        {
+          "id": 1,
+          "name": "conjunto-body-fralda-de-boca-sapatinho-leaozinho (1)",
+          "path": "https://user-images.githubusercontent.com/21282437/72762612-082a3e80-3bbf-11ea-9ba8-e884d6c40d04.jpeg"
+        },
+        {
+          "id": 2,
+          "name": "conjunto-body-fralda-de-boca-sapatinho-leaozinho (2)",
+          "path": "https://user-images.githubusercontent.com/21282437/72762613-082a3e80-3bbf-11ea-8c4d-9126da3f0b2d.jpeg"
+        },
+        {
+          "id": 3,
+          "name": "conjunto-body-fralda-de-boca-sapatinho-leaozinho (3)",
+          "path": "https://user-images.githubusercontent.com/21282437/72762614-082a3e80-3bbf-11ea-834e-bd2148980384.jpeg"
+        },
+        {
+          "id": 4,
+          "name": "conjunto-body-fralda-de-boca-sapatinho-leaozinho-mesversario-personalizado",
+          "path": "https://user-images.githubusercontent.com/21282437/72762615-082a3e80-3bbf-11ea-9134-9770ab781c1a.jpeg"
+        },
+        {
+          "id": 5,
+          "name": "conjunto-body-fralda-de-boca-sapatinho-leaozinho",
+          "path": "https://user-images.githubusercontent.com/21282437/72762617-082a3e80-3bbf-11ea-9a8a-98edb83e5aa4.jpeg"
+        }
+      ],
+      "ref": "103AE74"
+    },
+    {
+      "id": 7,
+      "name": "Sapatilha bebe de fita estilo ballet - Vermelha",
+      "description": "As sapatilhas mais lindas e fofas você encontra na Lado DiCá.\n Para sua baby arrasar nas ocasiões especiais!\n *Natal\n *Reveillon\n *Batizado\n *Aniversário\n Sapatilha confeccionado em cetim estruturada, com forro em elanca, acabamento com viés de algodão, fechamento em fita de cetim\n Cor: Vermelho\n OBS: CONSULTAR A DISPONIBILIDADE DE TAMANHOS NA HORA DA COMPRA\n Tamanhos: 12 ao 18\n Medidas externa\n N° 12 – 9 cm (Rescém Nascido e Reborn)\n Nº 13 – 10 cm (0-2 meses)\n Nº 14 – 10,5 cm (2-4 meses)\n Nº 15 – 11 cm (4-6 meses)\n Nº 16 – 11,7 cm (6-7 meses)\n Nº 17 – 12,5 cm (8-10 meses)\n Nº 18 – 13 cm (10-12 meses)\n Peso: 100 g\n Código do produto: 1120845\n Adicionado em: 11/12/2019",
+      "price": "79,90",
+      "discount": 12,
+      "sizes": [
+        {
+          "id": 5,
+          "description": "N° 12 – 9 cm (Rescém Nascido e Reborn)",
+          "initials": "N° 12"
+        },
+        {
+          "id": 6,
+          "description": "Nº 13 – 10 cm (0-2 meses)",
+          "initials": "N° 13"
+        },
+        {
+          "id": 7,
+          "description": "Nº 14 – 10,5 cm (2-4 meses)",
+          "initials": "N° 14"
+        },
+        {
+          "id": 8,
+          "description": "Nº 15 – 11 cm (4-6 meses)",
+          "initials": "N° 15"
+        },
+        {
+          "id": 9,
+          "description": "Nº 16 – 11,7 cm (6-7 meses)",
+          "initials": "N° 16"
+        },
+        {
+          "id": 10,
+          "description": "Nº 17 – 12,5 cm (8-10 meses)",
+          "initials": "N° 17"
+        },
+        {
+          "id": 11,
+          "description": "Nº 18 – 13 cm (10-12 meses)",
+          "initials": "N° 18"
+        }
+      ],
+      "category": {
+        "id": 5,
+        "name": "Sapatinhos"
+      },
+      "pics": [
+        {
+          "id": 1,
+          "name": "sapatilha-bebe-de-fita-estilo-ballet-vermelha-sapatilha-de-fita",
+          "path": "https://user-images.githubusercontent.com/21282437/72762985-6f94be00-3bc0-11ea-81aa-c4e1d4fca5c3.jpeg"
+        }
+      ],
+      "ref": "1120845"
+    },
+    {
+      "id": 8,
+      "name": "Kit fralda de boca e ombro - Girafa",
+      "description": "Toda mamãe sabe, que um joguinho de fraldas bem reforçada e essencial para compor o enxoval do baby tão esperado! Na Lado DiCá você encontra lindos modelos de fraldas bordadas, super resistentes e duram muito!\n Fraldas duplas super reforçadas\n Kit composto de:\n 1 Fralda de boca medindo 35x35cm\n 1 Fralda de ombro medindo 70x70cm\n Bordado: Eletronico com aplique em tecido ( fazemos no tema que vc preferir )\n OBS: ENVIE MENSAGEM PARA CONSULTAR DISPONIBILIDADE DE OUTRAS CORES E TEMAS\n Atenção!!! Produto Personalizado!!!\n Vendemos sob encomenda, compre pelo nosso anúncio e envie o nome do bebê por mensagem. Se procura algo específico e com suas idéias, entre em contato conosco e vamos verificar a disponibilidade de produzir.\n Caso tenha dúvidas, entre em contato!!\n Boas compras!!\n Peso: 300 g\n Código do produto: 10A3205\n Adicionado em: 15/10/2019",
+      "price": "49,90",
+      "discount": 15.5,
+      "sizes": [],
+      "category": {
+        "id": 5,
+        "name": "Fraldas"
+      },
+      "pics": [
+        {
+          "id": 1,
+          "name": "kit-fralda-de-boca-e-ombro-girafa-fralda-de-boca",
+          "path": "https://user-images.githubusercontent.com/21282437/72763178-4294db00-3bc1-11ea-8c98-6f5a7c61a27e.jpeg"
+        },
+        {
+          "id": 2,
+          "name": "kit-fralda-de-boca-e-ombro-girafa-fralda-dupla",
+          "path": "https://user-images.githubusercontent.com/21282437/72763179-4294db00-3bc1-11ea-83b0-bb69d0f23da5.jpeg"
+        }
+      ],
+      "ref": "1520848"
+    }
+  ],
+
+  "highlights": [
+    {
+      "id": 1,
+      "name": "Body + Calcinha bunda rica - Meu Primeiro Natal",
+      "description": "Body Personalizado Lado Dicá!! \n A época mais encantadora do ano está quase chegando! \n Na Lado Dica você antecipa o look do seu baby , com as opções mais lindas e fofas!!\n Apresentamos o Kit Meu 1° Natal Feminino \n Composto por body confeccionado com bordado e aplique acompanha essa charmosa calcinha bunda rica vermelha \n Tecido: 100% Algodão \n Aplique: Tricoline 100% Algodão e Feltro \n Bordado: Eletronico com aplique \n Laços: Cetim \n Cor: Branco / Vermelho\n Tamanhos disponíveis: P/M/G /GG ( confira as dimensões nas imagens )\n Atenção!!! Produto Personalizado!!!\n Vendemos sob encomenda, compre pelo nosso anúncio e envie o nome do bebê por mensagem. Se procura algo específico e com suas idéias, entre em contato conosco e vamos verificar a disponibilidade de produzir.\n Caso tenha dúvidas, entre em contato!!\n Boas compras!!\n Peso: 150 g\n Código do produto: 10D9252\n Adicionado em: 07/11/2019",
+      "price": "59,90",
+      "discount": 10,
+      "sizes": [
+        {
+          "id": 1,
+          "description": "Pequeno",
+          "initials": "P"
+        },
+        {
+          "id": 2,
+          "description": "Médio",
+          "initials": "M"
+        },
+        {
+          "id": 3,
+          "description": "Grande",
+          "initials": "G"
+        },
+        {
+          "id": 4,
+          "description": "Extra Grande",
+          "initials": "GG"
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Meninas"
+      },
+      "pics": [
+        {
+          "id": 1,
+          "name": "body-calcinha-bunda-rica-natal-bebe-personalizado",
+          "path": "https://user-images.githubusercontent.com/21282437/72762381-1f1c6100-3bbe-11ea-985f-bbc89e57c612.jpeg"
+        },
+        {
+          "id": 2,
+          "name": "body-calcinha-bunda-rica-natal-body-mesversario",
+          "path": "https://user-images.githubusercontent.com/21282437/72762382-1fb4f780-3bbe-11ea-9586-ec4cdd70a610.jpeg"
+        },
+        {
+          "id": 3,
+          "name": "body-calcinha-bunda-rica-natal-body",
+          "path": "https://user-images.githubusercontent.com/21282437/72762383-1fb4f780-3bbe-11ea-8b82-90b75d2a3236.jpeg"
+        },
+        {
+          "id": 4,
+          "name": "body-calcinha-bunda-rica-natal-kit-body-meses",
+          "path": "https://user-images.githubusercontent.com/21282437/72762384-1fb4f780-3bbe-11ea-96ea-75d4478574f3.jpeg"
+        },
+        {
+          "id": 5,
+          "name": "body-calcinha-bunda-rica-natal-roupa-natal",
+          "path": "https://user-images.githubusercontent.com/21282437/72762385-1fb4f780-3bbe-11ea-8f9b-1476d7221a8d.jpeg"
+        }
+      ],
+      "ref": "10D9252"
+    },
+    {
+      "id": 2,
+      "name": "Conjunto Body + Fralda de boca + Sapatinho - Leãozinho",
+      "description": "Body Personalizado Lado Dicá!! \n A época mais encantadora do ano está quase chegando! \n Na Lado Dica você antecipa o look do seu baby , com as opções mais lindas e fofas!!\n Apresentamos o Kit Meu 1° Natal Feminino \n Composto por body confeccionado com bordado e aplique acompanha essa charmosa calcinha bunda rica vermelha \n Tecido: 100% Algodão \n Aplique: Tricoline 100% Algodão e Feltro \n Bordado: Eletronico com aplique \n Laços: Cetim \n Cor: Branco / Vermelho\n Tamanhos disponíveis: P/M/G /GG ( confira as dimensões nas imagens )\n Atenção!!! Produto Personalizado!!!\n Vendemos sob encomenda, compre pelo nosso anúncio e envie o nome do bebê por mensagem. Se procura algo específico e com suas idéias, entre em contato conosco e vamos verificar a disponibilidade de produzir.\n Caso tenha dúvidas, entre em contato!!\n Boas compras!!\n Peso: 150 g\n Código do produto: 10D9252\n Adicionado em: 07/11/2019",
+      "price": "79,90",
+      "discount": 7,
+      "sizes": [
+        {
+          "id": 1,
+          "description": "Pequeno",
+          "initials": "P"
+        },
+        {
+          "id": 2,
+          "description": "Médio",
+          "initials": "M"
+        },
+        {
+          "id": 3,
+          "description": "Grande",
+          "initials": "G"
+        },
+        {
+          "id": 4,
+          "description": "Extra Grande",
+          "initials": "GG"
+        }
+      ],
+      "category": {
+        "id": 1,
+        "name": "Meninos"
+      },
+      "pics": [
+        {
+          "id": 1,
+          "name": "conjunto-body-fralda-de-boca-sapatinho-leaozinho (1)",
+          "path": "https://user-images.githubusercontent.com/21282437/72762612-082a3e80-3bbf-11ea-9ba8-e884d6c40d04.jpeg"
+        },
+        {
+          "id": 2,
+          "name": "conjunto-body-fralda-de-boca-sapatinho-leaozinho (2)",
+          "path": "https://user-images.githubusercontent.com/21282437/72762613-082a3e80-3bbf-11ea-8c4d-9126da3f0b2d.jpeg"
+        },
+        {
+          "id": 3,
+          "name": "conjunto-body-fralda-de-boca-sapatinho-leaozinho (3)",
+          "path": "https://user-images.githubusercontent.com/21282437/72762614-082a3e80-3bbf-11ea-834e-bd2148980384.jpeg"
+        },
+        {
+          "id": 4,
+          "name": "conjunto-body-fralda-de-boca-sapatinho-leaozinho-mesversario-personalizado",
+          "path": "https://user-images.githubusercontent.com/21282437/72762615-082a3e80-3bbf-11ea-9134-9770ab781c1a.jpeg"
+        },
+        {
+          "id": 5,
+          "name": "conjunto-body-fralda-de-boca-sapatinho-leaozinho",
+          "path": "https://user-images.githubusercontent.com/21282437/72762617-082a3e80-3bbf-11ea-9a8a-98edb83e5aa4.jpeg"
+        }
+      ],
+      "ref": "103AE74"
+    },
+    {
+      "id": 3,
+      "name": "Sapatilha bebe de fita estilo ballet - Vermelha",
+      "description": "As sapatilhas mais lindas e fofas você encontra na Lado DiCá.\n Para sua baby arrasar nas ocasiões especiais!\n *Natal\n *Reveillon\n *Batizado\n *Aniversário\n Sapatilha confeccionado em cetim estruturada, com forro em elanca, acabamento com viés de algodão, fechamento em fita de cetim\n Cor: Vermelho\n OBS: CONSULTAR A DISPONIBILIDADE DE TAMANHOS NA HORA DA COMPRA\n Tamanhos: 12 ao 18\n Medidas externa\n N° 12 – 9 cm (Rescém Nascido e Reborn)\n Nº 13 – 10 cm (0-2 meses)\n Nº 14 – 10,5 cm (2-4 meses)\n Nº 15 – 11 cm (4-6 meses)\n Nº 16 – 11,7 cm (6-7 meses)\n Nº 17 – 12,5 cm (8-10 meses)\n Nº 18 – 13 cm (10-12 meses)\n Peso: 100 g\n Código do produto: 1120845\n Adicionado em: 11/12/2019",
+      "price": "79,90",
+      "discount": 12,
+      "sizes": [
+        {
+          "id": 5,
+          "description": "N° 12 – 9 cm (Rescém Nascido e Reborn)",
+          "initials": "N° 12"
+        },
+        {
+          "id": 6,
+          "description": "Nº 13 – 10 cm (0-2 meses)",
+          "initials": "N° 13"
+        },
+        {
+          "id": 7,
+          "description": "Nº 14 – 10,5 cm (2-4 meses)",
+          "initials": "N° 14"
+        },
+        {
+          "id": 8,
+          "description": "Nº 15 – 11 cm (4-6 meses)",
+          "initials": "N° 15"
+        },
+        {
+          "id": 9,
+          "description": "Nº 16 – 11,7 cm (6-7 meses)",
+          "initials": "N° 16"
+        },
+        {
+          "id": 10,
+          "description": "Nº 17 – 12,5 cm (8-10 meses)",
+          "initials": "N° 17"
+        },
+        {
+          "id": 11,
+          "description": "Nº 18 – 13 cm (10-12 meses)",
+          "initials": "N° 18"
+        }
+      ],
+      "category": {
+        "id": 5,
+        "name": "Sapatinhos"
+      },
+      "pics": [
+        {
+          "id": 1,
+          "name": "sapatilha-bebe-de-fita-estilo-ballet-vermelha-sapatilha-de-fita",
+          "path": "https://user-images.githubusercontent.com/21282437/72762985-6f94be00-3bc0-11ea-81aa-c4e1d4fca5c3.jpeg"
+        }
+      ],
+      "ref": "1120845"
+    },
+    {
+      "id": 4,
+      "name": "Kit fralda de boca e ombro - Girafa",
+      "description": "Toda mamãe sabe, que um joguinho de fraldas bem reforçada e essencial para compor o enxoval do baby tão esperado! Na Lado DiCá você encontra lindos modelos de fraldas bordadas, super resistentes e duram muito!\n Fraldas duplas super reforçadas\n Kit composto de:\n 1 Fralda de boca medindo 35x35cm\n 1 Fralda de ombro medindo 70x70cm\n Bordado: Eletronico com aplique em tecido ( fazemos no tema que vc preferir )\n OBS: ENVIE MENSAGEM PARA CONSULTAR DISPONIBILIDADE DE OUTRAS CORES E TEMAS\n Atenção!!! Produto Personalizado!!!\n Vendemos sob encomenda, compre pelo nosso anúncio e envie o nome do bebê por mensagem. Se procura algo específico e com suas idéias, entre em contato conosco e vamos verificar a disponibilidade de produzir.\n Caso tenha dúvidas, entre em contato!!\n Boas compras!!\n Peso: 300 g\n Código do produto: 10A3205\n Adicionado em: 15/10/2019",
+      "price": "49,90",
+      "discount": 15.5,
+      "sizes": [],
+      "category": {
+        "id": 5,
+        "name": "Fraldas"
+      },
+      "pics": [
+        {
+          "id": 1,
+          "name": "kit-fralda-de-boca-e-ombro-girafa-fralda-de-boca",
+          "path": "https://user-images.githubusercontent.com/21282437/72763178-4294db00-3bc1-11ea-8c98-6f5a7c61a27e.jpeg"
+        },
+        {
+          "id": 2,
+          "name": "kit-fralda-de-boca-e-ombro-girafa-fralda-dupla",
+          "path": "https://user-images.githubusercontent.com/21282437/72763179-4294db00-3bc1-11ea-83b0-bb69d0f23da5.jpeg"
+        }
+      ],
+      "ref": "1520848"
+    }
+  ],
+
+  "categories": [
+    {
+      "id": 1,
+      "name": "Meninas"
+    },
+    {
+      "id": 2,
+      "name": "Meninos"
+    },
+    {
+      "id": 3,
+      "name": "Kits"
+    },
+    {
+      "id": 4,
+      "name": "Fraldas"
+    },
+    {
+      "id": 5,
+      "name": "Sapatinhos"
     }
   ]
 }
