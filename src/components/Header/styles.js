@@ -3,7 +3,6 @@ import Painel from '~/assets/painel.jpg';
 
 export const Container = styled.div`
   padding: 0 30px;
-  /* border-bottom: 1px solid #e5afb4; */
   background: url(${Painel}) repeat-x top center;
   height: 170px;
 
@@ -27,7 +26,7 @@ export const Content = styled.div`
 
     img {
       padding-top: 10px;
-      width: 180px;
+      width: 170px;
       height: 150px;
     }
   }

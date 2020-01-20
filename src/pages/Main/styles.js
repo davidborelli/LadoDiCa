@@ -12,7 +12,10 @@ export const ProductList = styled.ul`
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
   list-style: none;
-  margin: 10px;
+  margin: 10px 0;
+
+  border-top: 1px solid #f4f5f7;
+  padding-top: 10px;
 
   li {
     display: flex;
@@ -31,21 +34,96 @@ export const ProductList = styled.ul`
 
     img {
       align-self: center;
-      max-width: 250px;
+      max-width: 240px;
       border-radius: 5px;
     }
 
     > strong {
-      font-size: 16px;
+      text-align: center;
+      font-size: 14px;
       line-height: 20px;
       color: #333;
       margin-top: 5px;
     }
 
-    > span {
-      font-size: 21px;
+    div.card-footer {
+      display: flex;
+      font-size: 12px;
+      justify-content: space-between;
+      margin-top: 20px;
+
+      div.price {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 5px;
+
+        span.original-price {
+          color: #444;
+          text-decoration: line-through;
+        }
+
+        span.current-price {
+          margin: 7px 0;
+
+          strong {
+            font-size: 16px;
+          }
+        }
+      }
+
+      div.division {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #888;
+      }
+
+      div.card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 5px;
+
+        span.card-price {
+          font-size: 16px;
+          margin: 5px 0;
+        }
+      }
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #fff;
+      padding: 5px;
+      font-size: 14px;
       font-weight: bold;
-      margin: 5px 0 20px;
+      margin: 10px 0;
+
+      height: 40px;
+      background: #4d9a9b;
+      border-radius: 3px;
+
+      div {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        background: rgba(0, 0, 0, 0.1);
+        border-radius: 3px;
+
+        svg {
+          margin-right: 5px;
+        }
+      }
+
+      span {
+        flex: 1;
+        text-align: center;
+        font-weight: bold;
+      }
     }
   }
 `;
