@@ -192,3 +192,23 @@ export const InfoProductsToBuy = styled.div`
     background: #f0a2a4;
   }
 `;
+
+export const ProductDetail = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  margin: 20px 0;
+
+  h2 {
+    border-bottom: 1px solid #f3f3f3;
+    font-size: 24px;
+    color: #464646;
+    font-weight: 200;
+    padding-bottom: 5px;
+  }
+
+  div.text-detail {
+    font-size: 16px;
+    margin: 20px 0;
+  }
+`;
