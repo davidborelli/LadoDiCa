@@ -34,15 +34,15 @@ export const Content = styled.div`
 
   input {
     height: 40px;
-    width: 200px;
-    border: 1px solid #e5afb4;
-    border-radius: 10px;
+    width: 400px;
+    border: 1px solid #e3e3e3;
+    border-radius: 3px;
     padding: 15px;
-    color: #e5afb4;
+    color: #999;
     margin-right: 10px;
 
     &::placeholder {
-      color: #e5afb4;
+      color: #e3e3e3;
     }
   }
 
@@ -51,22 +51,23 @@ export const Content = styled.div`
     align-items: center;
 
     a {
-      color: red;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 10px;
+
+      height: 40px;
+      width: 150px;
+      background: #4d9a9b;
+      border-radius: 3px;
 
       span {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        color: #fff;
+        font-weight: bold;
+      }
 
-        text-decoration: none;
-        background: #888;
-        border-radius: 50%;
-        width: 15px;
-        height: 15px;
-        font-size: 12px;
-        position: absolute;
-        margin-top: -40px;
-        margin-left: 18px;
+      span:last-child {
+        font-size: 16px;
       }
     }
   }

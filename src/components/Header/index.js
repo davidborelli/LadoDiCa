@@ -17,7 +17,8 @@ export default function Header() {
         <aside>
           <input type="text" placeholder="Pesquisa..." />
           <a href="http://localhost:3000">
-            <Icon size={36} color="#E5AFB4" />
+            <Icon size={26} color="#fff" />
+            <span>Minha Cesta</span>
             <span>10</span>
           </a>
         </aside>
