@@ -97,6 +97,7 @@ export const CartFooter = styled.div`
   display: flex;
   padding: 15px;
   justify-content: space-between;
+  border: 1px solid #1111;
 
   div.coupon {
     padding: 15px;
