@@ -1,38 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 import { MdLocalGroceryStore as Icon } from 'react-icons/md';
 import Footer from '~/components/Footer';
 
-import ImagemTeste from '~/images/carousel1.jpeg';
 import * as S from './styles';
 
-export default function ProductDetail() {
+export default function ProductDetail({ location }) {
+  const [size, setSize] = useState('');
+  const [product] = useState(location.state.product);
+  const [draftPhoto, setDraftPhoto] = useState(product.pics[0]);
+
   return (
     <>
       <S.Container>
         <S.ProductHeader>
           <S.Pic>
             <div className="big-pic">
-              <img src={ImagemTeste} alt="big" />
+              <img src={draftPhoto.path} alt={draftPhoto.name} />
             </div>
             <div className="pic-detail">
-              <div>
-                <img src={ImagemTeste} alt="Test" />
-              </div>
-              <div>
-                <img src={ImagemTeste} alt="Test" />
-              </div>
-              <div>
-                <img src={ImagemTeste} alt="Test" />
-              </div>
-              <div>
-                <img src={ImagemTeste} alt="Test" />
-              </div>
+              {product.pics.map(pic => (
+                <S.MiniaturePic
+                  onClick={() => setDraftPhoto(pic)}
+                  isSelected={pic.name === draftPhoto.name}
+                  key={pic.name}
+                >
+                  <img src={pic.path} alt={pic.name} />
+                </S.MiniaturePic>
+              ))}
             </div>
           </S.Pic>
 
           <S.InfoProductsToBuy>
-            <h1>Kit Body Bebê 3 Peças Flamingo Branco - Club B</h1>
+            <h1>{product.name}</h1>
 
             <div className="price-detail">
               <div className="price">
@@ -52,15 +53,25 @@ export default function ProductDetail() {
               </div>
             </div>
 
-            <div className="sizes">
-              <div className="size-hosen">Tamanho:</div>
-              <div className="size-to-Choose">
-                <span>P</span>
-                <span>M</span>
-                <span>G</span>
-                <span>GG</span>
+            {product.sizes.length > 0 && (
+              <div className="sizes">
+                <div className="size-hosen">
+                  Tamanho: <span>{size}</span>
+                </div>
+                <div className="size-to-Choose">
+                  {product.sizes.map(sizeParam => (
+                    <S.ButtonSize
+                      isSelected={sizeParam.initials === size}
+                      type="button"
+                      onClick={() => setSize(sizeParam.initials)}
+                      key={sizeParam.initials}
+                    >
+                      {sizeParam.initials}
+                    </S.ButtonSize>
+                  ))}
+                </div>
               </div>
-            </div>
+            )}
 
             <button type="button">
               <span>Comprar</span>
@@ -72,39 +83,16 @@ export default function ProductDetail() {
         <S.ProductDetail>
           <h2>Detalhes</h2>
 
-          <div className="text-detail">
-            <ul>
-              <li>
-                <strong>Bodies:</strong>
-              </li>
-              <li>
-                Fabricados em 85% algodão e 15% pode variar entre outras fibras;
-              </li>
-              <li>Gola redonda;</li>
-              <li>Estampa frontal.</li>
-            </ul>
-            <ul>
-              <li>
-                <strong>Calça:</strong>
-              </li>
-              <li>
-                Fabricada em 85% algodão e 15% pode variar entre outras fibras;
-              </li>
-              <li>Cor lisa;</li>
-              <li>Cós com elástico.</li>
-            </ul>
-            <ul>
-              <li>
-                <strong>Cuidados:</strong>
-              </li>
-              <li>Lavar com cores similares;</li>
-              <li>Passar somente pelo avesso;</li>
-              <li>Não usar alvejante.</li>
-            </ul>{' '}
-          </div>
+          <div className="text-detail">{product.description}</div>
         </S.ProductDetail>
       </S.Container>
       <Footer />
     </>
   );
 }
+
+ProductDetail.propTypes = {
+  location: PropTypes.shape({
+    state: PropTypes.object,
+  }).isRequired,
+};

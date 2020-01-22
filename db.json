@@ -635,5 +635,18 @@
       "id": 5,
       "name": "Sapatinhos"
     }
+  ],
+
+  "cupons": [
+    {
+      "id": 1,
+      "name": "BABY5",
+      "discount": 5
+    },
+    {
+      "id": 2,
+      "name": "BABY10",
+      "discount": 10
+    }
   ]
 }

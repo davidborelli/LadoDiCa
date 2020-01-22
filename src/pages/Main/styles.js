@@ -26,7 +26,12 @@ export const ProductList = styled.ul`
     border: 1px solid #f4f5f7;
     border-radius: 5px;
 
-    transition: all 0.2s;
+    transition: border 0.5s;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
 
     &:hover {
       border: 1px solid rgba(0, 0, 0, 0.3);

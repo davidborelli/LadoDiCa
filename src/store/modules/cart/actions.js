@@ -32,3 +32,17 @@ export function updateAmountSuccess(id, amount) {
     payload: { id, amount },
   };
 }
+
+export function addCuponDiscountCartRequest(name) {
+  return {
+    type: '@cart/ADD_CUPON_DISCOUNT_CART_REQUEST',
+    payload: name,
+  };
+}
+
+export function addCuponDiscountCartSuccess(coupon) {
+  return {
+    type: '@cart/ADD_CUPON_DISCOUNT_CART_SUCCESS',
+    payload: coupon,
+  };
+}

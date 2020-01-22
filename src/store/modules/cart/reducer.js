@@ -2,6 +2,7 @@ import produce from 'immer';
 
 const INITIAL_STATE = {
   items: [],
+  coupon: null,
 };
 
 export default function cart(state = INITIAL_STATE, action) {
@@ -27,6 +28,11 @@ export default function cart(state = INITIAL_STATE, action) {
         if (idx >= 0) {
           draft.items[idx].amount = Number(action.payload.amount);
         }
+      });
+
+    case '@cart/ADD_CUPON_DISCOUNT_CART_SUCCESS':
+      return produce(state, draft => {
+        draft.coupon = action.payload;
       });
     default:
       return state;

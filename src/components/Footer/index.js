@@ -15,7 +15,7 @@ export default function Footer() {
             const Icon = Icons[link.label];
 
             return (
-              <div className={link.label} key={link.name}>
+              <div className={link.label} key={link.label}>
                 <a href={link.url}>
                   <Icon size={30} color="#E4D4BB" />
                 </a>

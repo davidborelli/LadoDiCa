@@ -15,37 +15,39 @@ export const Pic = styled.div`
   flex-direction: column;
 
   div.big-pic {
+    display: flex;
+    justify-content: center;
     width: 500px;
     height: 360px;
     border: 1px solid #f3f3f3;
     border-radius: 3px;
 
     img {
-      width: 100%;
+      width: auto;
       height: 100%;
     }
   }
 
   div.pic-detail {
     display: flex;
+  }
+`;
 
-    div {
-      width: 107px;
-      height: 72px;
-      margin: 10px 8px 0 0;
+export const MiniaturePic = styled.div`
+  width: 87px;
+  height: 72px;
+  margin: 10px 8px 0 0;
 
-      border: 1px solid #f3f3f3;
+  border: 1px solid ${props => (props.isSelected ? '#999' : '#f3f3f3')};
 
-      &:hover {
-        cursor: pointer;
-        border: 1px solid #999;
-      }
+  &:hover {
+    cursor: pointer;
+    border: 1px solid #999;
+  }
 
-      img {
-        width: 100%;
-        height: 100%;
-      }
-    }
+  img {
+    width: 100%;
+    height: 100%;
   }
 `;
 
@@ -132,39 +134,22 @@ export const InfoProductsToBuy = styled.div`
       padding: 10px;
       font-size: 12px;
       font-weight: 600;
+
+      > span {
+        margin-left: 10px;
+        font-size: 16px;
+      }
     }
 
     div.size-to-Choose {
+      display: flex;
+      flex-wrap: wrap;
       border: 3px solid #f3f3f3;
       padding: 15px 5px;
-
-      span {
-        margin: 0 5px 0 0;
-        padding: 5px 12px;
-        border: 1px solid #f3f3f3;
-        font-weight: 600;
-        border-radius: 2px;
-        position: relative;
-
-        &::after {
-          content: '';
-          width: 100%;
-          height: 2px;
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          background: #999;
-        }
-
-        &:hover {
-          cursor: pointer;
-          border: 1px solid #999;
-        }
-      }
     }
   }
 
-  button {
+  > button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -210,5 +195,29 @@ export const ProductDetail = styled.div`
   div.text-detail {
     font-size: 16px;
     margin: 20px 0;
+  }
+`;
+
+export const ButtonSize = styled.button`
+  margin: 5px 5px 0 0;
+  padding: 7px 12px;
+  border: 1px solid ${props => (props.isSelected ? '#999' : '#f3f3f3')};
+  font-weight: 600;
+  border-radius: 2px;
+  position: relative;
+
+  &::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #999;
+  }
+
+  &:hover {
+    cursor: pointer;
+    border: 1px solid #999;
   }
 `;

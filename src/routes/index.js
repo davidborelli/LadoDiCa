@@ -9,7 +9,7 @@ export default function RoutesWrapper() {
   return (
     <Switch>
       <Route path="/" exact component={Main} />
-      <Route path="/detail" component={ProductDetail} />
+      <Route path="/detail/:productId" component={ProductDetail} />
       <Route path="/cart" component={Cart} />
     </Switch>
   );

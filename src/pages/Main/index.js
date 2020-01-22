@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { MdLocalGroceryStore as Icon } from 'react-icons/md';
 import { useDispatch, useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 
+import { calculeDiscount } from '~/utils/format';
 import * as S from './styles';
 
 import api from '~/services/api';
@@ -20,8 +22,6 @@ export default function Main() {
     return sum;
   }, {});
 
-  // console.tron.log(currentState);
-
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -29,13 +29,8 @@ export default function Main() {
       const response = await api.get('products');
 
       const formatedList = response.data.map(product => {
-        const priceFormated = parseFloat(product.price.replace(',', '.'));
-        const priceWithDiscount = (
-          priceFormated -
-          (product.discount / 100) * priceFormated
-        ).toLocaleString('pt-br', {
-          maximumFractionDigits: 2,
-        });
+        const { price, discount } = product;
+        const priceWithDiscount = calculeDiscount(price, discount);
 
         return {
           ...product,
@@ -61,28 +56,34 @@ export default function Main() {
         <S.ProductList>
           {products.map(product => (
             <li key={product.id}>
-              <img src={product.pics[0].path} alt={product.name} />
-              <strong>{product.name}</strong>
-              <div className="card-footer">
-                <div className="price">
-                  <span className="original-price">De: R${product.price}</span>
-                  <span className="current-price">
-                    Por: R$
-                    <strong>{product.priceWithDiscount}</strong>
-                  </span>
+              <Link
+                to={{ pathname: `/detail/${product.id}`, state: { product } }}
+              >
+                <img src={product.pics[0].path} alt={product.name} />
+                <strong>{product.name}</strong>
+                <div className="card-footer">
+                  <div className="price">
+                    <span className="original-price">
+                      De: R${product.price}
+                    </span>
+                    <span className="current-price">
+                      Por: R$
+                      <strong>{product.priceWithDiscount}</strong>
+                    </span>
+                  </div>
+                  <div className="division">
+                    <span>|</span>
+                    <span>ou</span>
+                    <span>|</span>
+                  </div>
+                  <div className="card">
+                    <span className="card-price">
+                      R${product.priceWithDiscount}
+                    </span>
+                    <span className="card-description">no cartão à vista</span>
+                  </div>
                 </div>
-                <div className="division">
-                  <span>|</span>
-                  <span>ou</span>
-                  <span>|</span>
-                </div>
-                <div className="card">
-                  <span className="card-price">
-                    R${product.priceWithDiscount}
-                  </span>
-                  <span className="card-description">no cartão à vista</span>
-                </div>
-              </div>
+              </Link>
               <button type="button" onClick={() => handleAddToCart(product.id)}>
                 <div>
                   <Icon color="#fff" size={20} /> {newAmount[product.id] || 0}

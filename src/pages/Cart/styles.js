@@ -79,12 +79,26 @@ export const ProductTable = styled.table`
         display: flex;
         align-items: center;
 
+        button {
+          background: transparent;
+          border: none;
+        }
+
         > div {
           display: flex;
           flex-direction: column;
           align-items: center;
+
+          button {
+            background: transparent;
+            border: none;
+          }
         }
       }
+    }
+
+    td.description {
+      text-align: left;
     }
   }
 
@@ -183,13 +197,16 @@ export const PageFooter = styled.div`
 
   margin-top: 20px;
 
-  button.continue-buy {
+  a.continue-buy {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 30px;
     width: 180px;
     border-radius: 5px;
+    background: #faf7f7;
+    color: inherit;
+    border: 1px solid #1111;
   }
 
   button.finish-buy {
@@ -200,5 +217,19 @@ export const PageFooter = styled.div`
     font-weight: bold;
     border-radius: 7px;
     font-style: italic;
+  }
+`;
+
+export const Discount = styled.div`
+  display: ${props => (props.hidden ? 'none' : null)};
+  height: 30px;
+  border: 5px 0;
+  padding: 5px;
+  text-align: right;
+  margin: 10px 0;
+  color: #f79ea2;
+
+  > span {
+    margin-left: 15px;
   }
 `;

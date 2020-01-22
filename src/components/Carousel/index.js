@@ -1,33 +1,43 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Slider from 'infinite-react-carousel';
 
-import Imagem1 from '~/images/carousel1.jpeg';
-import Imagem2 from '~/images/carousel2.jpeg';
-import Imagem3 from '~/images/carousel3.jpeg';
+import { Link } from 'react-router-dom';
+import api from '~/services/api';
 
 export default function Carousel() {
+  const [highlights, setHighlights] = useState([]);
+
+  useEffect(() => {
+    const loadhighlights = async () => {
+      const response = await api.get('/highlights');
+
+      setHighlights(response.data);
+      console.tron.log(response.data);
+    };
+
+    loadhighlights();
+  }, []);
+
   const settings = {
     autoplay: true,
     dots: true,
+    arrows: false,
   };
 
   return (
     <Slider {...settings} style={{ width: '100%' }}>
-      <div>
-        <img src={Imagem1} alt="" />
-        <img src={Imagem1} alt="" />
-        <img src={Imagem1} alt="" />
-      </div>
-      <div>
-        <img src={Imagem2} alt="" />
-        <img src={Imagem2} alt="" />
-        <img src={Imagem2} alt="" />
-      </div>
-      <div>
-        <img src={Imagem3} alt="" />
-        <img src={Imagem3} alt="" />
-        <img src={Imagem3} alt="" />
-      </div>
+      {highlights.map(highlight => (
+        <div key={highlight.id}>
+          <Link
+            to={{
+              pathname: `/detail/${highlight.id}`,
+              state: { product: highlight },
+            }}
+          >
+            <img src={highlight.pics[0].path} alt={highlight.pics[0].name} />
+          </Link>
+        </div>
+      ))}
     </Slider>
   );
 }
