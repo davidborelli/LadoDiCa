@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 import { MdLocalGroceryStore as Icon } from 'react-icons/md';
 import Footer from '~/components/Footer';
+import { calculeDiscount } from '~/utils/format';
 
 import * as S from './styles';
 
@@ -37,9 +38,12 @@ export default function ProductDetail({ location }) {
 
             <div className="price-detail">
               <div className="price">
-                <span className="original-price">De: R$128,89</span>
+                <span className="original-price">De: R${product.price}</span>
                 <span className="current-price">
-                  Por: R$<strong>120,89</strong>
+                  Por: R$
+                  <strong>
+                    {calculeDiscount(product.price, product.discount)}
+                  </strong>
                 </span>
               </div>
               <div className="division">
@@ -48,7 +52,9 @@ export default function ProductDetail({ location }) {
                 <span>|</span>
               </div>
               <div className="card">
-                <span className="card-price">R$119,19</span>
+                <span className="card-price">
+                  R${calculeDiscount(product.price, product.discount)}
+                </span>
                 <span className="card-description">no cartão à vista</span>
               </div>
             </div>
