@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
 import { MdLocalGroceryStore as Icon } from 'react-icons/md';
@@ -6,11 +6,25 @@ import Footer from '~/components/Footer';
 import { calculeDiscount } from '~/utils/format';
 
 import * as S from './styles';
+import api from '~/services/api';
 
 export default function ProductDetail({ location }) {
+  const pdt = location.state.product;
+
   const [size, setSize] = useState('');
-  const [product] = useState(location.state.product);
+  const [product, setProduct] = useState(location.state.product);
   const [draftPhoto, setDraftPhoto] = useState(product.pics[0]);
+
+  useEffect(() => {
+    const loadProduct = async () => {
+      const response = await api.get(`/products?id=${pdt.id}`);
+
+      setProduct(response.data[0]);
+      setDraftPhoto(response.data[0].pics[0]);
+    };
+
+    loadProduct();
+  }, [pdt.id]);
 
   return (
     <>
@@ -89,7 +103,9 @@ export default function ProductDetail({ location }) {
         <S.ProductDetail>
           <h2>Detalhes</h2>
 
-          <div className="text-detail">{product.description}</div>
+          <div className="text-detail">
+            <p>{product.description}</p>
+          </div>
         </S.ProductDetail>
       </S.Container>
       <Footer />

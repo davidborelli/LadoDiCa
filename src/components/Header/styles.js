@@ -31,25 +31,11 @@ export const Content = styled.div`
     }
   }
 
-  input {
-    height: 40px;
-    width: 400px;
-    border: 1px solid #e3e3e3;
-    border-radius: 3px;
-    padding: 15px;
-    color: #999;
-    margin-right: 10px;
-
-    &::placeholder {
-      color: #e3e3e3;
-    }
-  }
-
   aside {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 
-    a {
+    > a {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -59,6 +45,7 @@ export const Content = styled.div`
       width: 150px;
       background: #4d9a9b;
       border-radius: 3px;
+      margin-left: 10px;
 
       span {
         color: #fff;

@@ -1,26 +1,33 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import * as S from './styles';
 
+import api from '~/services/api';
+
 export default function Category() {
+  const [categories, setCategories] = useState([]);
+
+  useEffect(() => {
+    const loadCategories = async () => {
+      const response = await api.get('/categories');
+
+      setCategories(response.data);
+    };
+
+    loadCategories();
+  }, []);
+
   return (
     <S.Content>
       <S.Bar>
         <ul>
-          <S.Link bottonLine="#F0A2A4" href="http://localhost">
-            <li>Meninas</li>
-          </S.Link>
-          <S.Link bottonLine="#6EC4AB" href="http://localhost">
-            <li>Meninos</li>
-          </S.Link>
-          <S.Link bottonLine="#F2C18D" href="http://localhost">
-            <li>Bebês</li>
-          </S.Link>
-          <S.Link bottonLine="#F7D798" href="http://localhost">
-            <li>Acessórios</li>
-          </S.Link>
-          <S.Link bottonLine="#357B92" href="http://localhost">
-            <li>Marcas</li>
-          </S.Link>
+          {categories.map(category => (
+            <Link to={{ pathname: '/', state: { category } }} key={category.id}>
+              <S.Link bottonLine={category.color}>
+                <li>{category.name}</li>
+              </S.Link>
+            </Link>
+          ))}
         </ul>
       </S.Bar>
     </S.Content>

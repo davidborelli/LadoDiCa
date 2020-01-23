@@ -15,12 +15,12 @@ export default function Footer() {
             const Icon = Icons[link.label];
 
             return (
-              <div className={link.label} key={link.label}>
-                <a href={link.url}>
+              <a href={link.url} rel="noopener noreferrer" target="_blank">
+                <div className={link.label} key={link.label}>
                   <Icon size={30} color="#E4D4BB" />
-                </a>
-                {link.text ? link.text : ''}
-              </div>
+                  {link.text ? link.text : ''}
+                </div>
+              </a>
             );
           })}
         </div>

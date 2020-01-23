@@ -6,6 +6,8 @@ import { MdLocalGroceryStore as Icon } from 'react-icons/md';
 import * as S from './styles';
 import Logo from '~/assets/logo2.png';
 
+import InputSearch from './InputSearch';
+
 export default function Header() {
   const amount = useSelector(state => state.cart.items.length);
 
@@ -19,7 +21,7 @@ export default function Header() {
         </nav>
 
         <aside>
-          <input type="text" placeholder="Pesquisa..." />
+          <InputSearch />
           <Link to="/cart">
             <Icon size={26} color="#fff" />
             <span>Minha Cesta</span>

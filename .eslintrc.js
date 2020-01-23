@@ -36,6 +36,9 @@ module.exports = {
     'no-restricted-globals': 'off',
     'no-alert': 'off',
     'jsx-a11y/control-has-associated-label': 'off',
+    'class-methods-use-this': 'off',
+    'import/no-extraneous-dependencies': 'off',
+    'no-console': 'off',
   },
   settings: {
     'import/resolver': {

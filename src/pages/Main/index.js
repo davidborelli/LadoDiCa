@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { MdLocalGroceryStore as Icon } from 'react-icons/md';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 import { calculeDiscount } from '~/utils/format';
 import * as S from './styles';
@@ -13,16 +14,17 @@ import { addToCartRequest } from '~/store/modules/cart/actions';
 import Carousel from '~/components/Carousel';
 import Footer from '~/components/Footer';
 
-export default function Main() {
+export default function Main({ location }) {
+  const category = location.state ? location.state.category : null;
+
   const [products, setProducts] = useState([]);
+  const dispatch = useDispatch();
 
   const currentState = useSelector(state => state.cart.items);
   const newAmount = currentState.reduce((sum, pdt) => {
     sum[pdt.id] = pdt.amount;
     return sum;
   }, {});
-
-  const dispatch = useDispatch();
 
   useEffect(() => {
     const loadProducts = async () => {
@@ -44,6 +46,14 @@ export default function Main() {
     loadProducts();
   }, []);
 
+  const productsFiltered = useMemo(
+    () =>
+      category
+        ? products.filter(product => product.category.name === category.name)
+        : products,
+    [category, products]
+  );
+
   const handleAddToCart = product => {
     dispatch(addToCartRequest(product));
   };
@@ -54,7 +64,7 @@ export default function Main() {
         <Carousel />
 
         <S.ProductList>
-          {products.map(product => (
+          {productsFiltered.map(product => (
             <li key={product.id}>
               <Link
                 to={{ pathname: `/detail/${product.id}`, state: { product } }}
@@ -98,3 +108,9 @@ export default function Main() {
     </>
   );
 }
+
+Main.propTypes = {
+  location: PropTypes.shape({
+    state: PropTypes.object,
+  }).isRequired,
+};

@@ -14,10 +14,15 @@ export const Bar = styled.div`
     flex-direction: row;
     list-style: none;
     height: 100%;
+
+    a {
+      display: flex;
+      flex-grow: 1;
+    }
   }
 `;
 
-export const Link = styled.a`
+export const Link = styled.div`
   display: flex;
   flex-grow: 1;
   width: 100%;

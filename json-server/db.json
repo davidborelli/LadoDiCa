@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Body + Calcinha bunda rica - Meu Primeiro Natal",
-      "description": "Body Personalizado Lado Dicá!! \n A época mais encantadora do ano está quase chegando! \n Na Lado Dica você antecipa o look do seu baby , com as opções mais lindas e fofas!!\n Apresentamos o Kit Meu 1° Natal Feminino \n Composto por body confeccionado com bordado e aplique acompanha essa charmosa calcinha bunda rica vermelha \n Tecido: 100% Algodão \n Aplique: Tricoline 100% Algodão e Feltro \n Bordado: Eletronico com aplique \n Laços: Cetim \n Cor: Branco / Vermelho\n Tamanhos disponíveis: P/M/G /GG ( confira as dimensões nas imagens )\n Atenção!!! Produto Personalizado!!!\n Vendemos sob encomenda, compre pelo nosso anúncio e envie o nome do bebê por mensagem. Se procura algo específico e com suas idéias, entre em contato conosco e vamos verificar a disponibilidade de produzir.\n Caso tenha dúvidas, entre em contato!!\n Boas compras!!\n Peso: 150 g\n Código do produto: 10D9252\n Adicionado em: 07/11/2019",
+      "description": "Body Personalizado Lado Dicá!! \n A época mais encantadora do ano está quase chegando!\n\nNa Lado Dica você antecipa o look do seu baby , com as opções mais lindas e fofas!!\n.\nApresentamos o Kit Meu 1° Natal Feminino\n\nComposto por body confeccionado com bordado e aplique acompanha essa charmosa calcinha bunda rica vermelha\n\nTecido: 100% Algodão\nAplique: Tricoline 100% Algodão e Feltro\nBordado: Eletronico com aplique\nLaços: Cetim\nCor: Branco / Vermelho\n\nTamanhos disponíveis: P/M/G /GG ( confira as dimensões nas imagens )\n\n\nAtenção!!! Produto Personalizado!!!\n\nVendemos sob encomenda, compre pelo nosso anúncio e envie o nome do bebê por mensagem. Se procura algo específico e com suas idéias, entre em contato conosco e vamos verificar a disponibilidade de produzir.\n\nCaso tenha dúvidas, entre em contato!!\n\nBoas compras!!\n\nPeso: 150 g\nCódigo do produto: 10D9252\nAdicionado em: 07/11/2019",
       "price": "59,90",
       "discount": 10,
       "sizes": [
@@ -59,7 +59,7 @@
           "path": "https://user-images.githubusercontent.com/21282437/72762385-1fb4f780-3bbe-11ea-8f9b-1476d7221a8d.jpeg"
         }
       ],
-      "ref": "10D9252"
+      "ref": "10D92522"
     },
     {
       "id": 2,
@@ -407,7 +407,6 @@
       "ref": "1520848"
     }
   ],
-
   "highlights": [
     {
       "id": 1,
@@ -613,30 +612,33 @@
       "ref": "1520848"
     }
   ],
-
   "categories": [
     {
       "id": 1,
-      "name": "Meninas"
+      "name": "Meninas",
+      "color": "#F0A2A4"
     },
     {
       "id": 2,
-      "name": "Meninos"
+      "name": "Meninos",
+      "color": "#6EC4AB"
     },
     {
       "id": 3,
-      "name": "Kits"
+      "name": "Kits",
+      "color": "#F2C18D"
     },
     {
       "id": 4,
-      "name": "Fraldas"
+      "name": "Fraldas",
+      "color": "#F7D798"
     },
     {
       "id": 5,
-      "name": "Sapatinhos"
+      "name": "Sapatinhos",
+      "color": "#357B92"
     }
   ],
-
   "cupons": [
     {
       "id": 1,

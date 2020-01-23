@@ -83,7 +83,10 @@ export default function Cart() {
     <S.Container>
       <S.Header>
         <h1>
-          Carrinho de compras <span>({cartItems.length} item)</span>
+          Carrinho de compras{' '}
+          <span>
+            ({cartItems.length} {cartItems.length === 1 ? 'item' : 'itens'})
+          </span>
         </h1>
         <button type="button">Finalizar Compra</button>
       </S.Header>
