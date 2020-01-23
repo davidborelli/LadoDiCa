@@ -44,7 +44,7 @@ Para utilizar o recurso de buscas, como o [JSON-SERVER](https://github.com/typic
 
 > O arquivo JSON onde estão cadastrados os produtos, estão no diretório /json-server/db.json
 
-### Como executar o projeto
+# Como executar o projeto
 
 Após o Download do repositório, na raiz da pasta executar o comando para instalar todas as dependências: </br>
 `npm install`
