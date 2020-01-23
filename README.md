@@ -35,7 +35,7 @@ Desenvolvido em React e utilizando Redux e Redux-Saga, a loja virtual LadoDiCá 
 
 4- Finalização da compra
 
-- Um modal onde é mostrada a informação que a compra foi concluída com sucesso, após fechar o mesmo, o carrinho será limpo e o usuário será direcionado para página inicia;
+- Um modal onde é mostrada a informação que a compra foi concluída com sucesso, após fechar o mesmo, o carrinho será limpo e o usuário será direcionado para página inicial;
 
 #### Fonte dos dados
 
