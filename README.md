@@ -1,68 +1,55 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Loja virtual LadoDiCá
 
-## Available Scripts
+### Apresentação do Projeto
 
-In the project directory, you can run:
+Desenvolvido em React e utilizando Redux e Redux-Saga, a loja virtual LadoDiCá é uma inicitiva referente a criação de um e-commerce para disponibilizar os produtos voltado para o público infantil.
 
-### `yarn start`
+### Recursos disponíveis
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### Funcionalidades
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+1- Página principal
 
-### `yarn test`
+- Listagem dos produtos com informações do nome e preço e quantidade de itens no carrinho;
+- Possibilidade de inserir itens no carrinho;
+- Campo de busca onde o usuário pode buscar por nome ou referência(código) do produto;
+- Informação de quantos itens (diferentes) possui no carrinho, o mesmo pode ser acessado de qualquer lugar da aplicação;
+- Mostrar os produtos por categoria (Meninas/Meninos/Kits/Fraldas/Satinhos) apenas clicando nas mesmas.
+- Informações para contato no rodapé, todos com redirecionamento para a mídia social/Whatsapp.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2- Detalhamento do Produto
 
-### `yarn build`
+- Possbilidade de ver as fotos disponiveis do protudo em destaque, apenas clicando nas miniaturas;
+- Campo para inserir o tamanho do produto;
+- Detalhes do produto onde é apresentado uma descrição mais detalhada do mesmo;
+- Botão para inserir o item no carrinho;
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3- Carrinho de compras
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- Listagem dos produtos adicionados ao carrinho, com suas respectivas quantidades,
+- Possibiliade de aumentar/diminuir a quantidade dos itens;
+- Possibilidade de remover o item do carrinho;
+- Informação dos valores (Subtotal/Total Geral), todos são calculados de forma dinâmica;
+- Possibilidade de inserir um cupom de desconto disponível;
+- Botão para finalizar a compra;
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4- Finalização da compra
 
-### `yarn eject`
+- Um modal onde é mostrada a informação que a compra foi concluída com sucesso, após fechar o mesmo, o carrinho será limpo e o usuário será direcionado para página inicia;
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### Fonte dos dados
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Como fonte de dados foi utilizado o [JSON-SERVER](https://github.com/typicode/json-server) ele disponibiliza um MOCK de dados previamente cadastrados, como se fosse uma API, onde a aplicação pode fazer requisições utilizando os verbos HTTP; </br>
+Para utilizar o recurso de buscas, como o [JSON-SERVER](https://github.com/typicode/json-server) não possui o recurso para buscar por um campo OU outro, foi adicionado um middleware (de acordo com a documentação), onde a requisição POST é recebida e processada, e retorna os dados encontrados.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+> O arquivo JSON onde estão cadastrados os produtos, estão no diretório /json-server/db.json
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Como executar o projeto
 
-## Learn More
+Após o Download do repositório, na raiz da pasta executar o comando para instalar todas as dependências: </br>
+`npm install`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Após o processo terminar execute o seguinte comando (também na raiz) para colocar no ar o JSON-SERVER:</br>
+`node server.js`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Se der tudo certo a página ficará disponível no endereço: http://localhost:3000/
