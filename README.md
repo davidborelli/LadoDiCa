@@ -14,7 +14,7 @@ Desenvolvido em React e utilizando Redux e Redux-Saga, a loja virtual LadoDiCá 
 - Possibilidade de inserir itens no carrinho;
 - Campo de busca onde o usuário pode buscar por nome ou referência(código) do produto;
 - Informação de quantos itens (diferentes) possui no carrinho, o mesmo pode ser acessado de qualquer lugar da aplicação;
-- Mostrar os produtos por categoria (Meninas/Meninos/Kits/Fraldas/Satinhos) apenas clicando nas mesmas.
+- Mostrar os produtos por categoria (Meninas/Meninos/Kits/Fraldas/Sapatinhos) apenas clicando nas mesmas.
 - Informações para contato no rodapé, todos com redirecionamento para a mídia social/Whatsapp.
 
 2- Detalhamento do Produto
