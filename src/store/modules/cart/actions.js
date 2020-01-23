@@ -46,3 +46,15 @@ export function addCuponDiscountCartSuccess(coupon) {
     payload: coupon,
   };
 }
+
+export function openCloseModal() {
+  return {
+    type: '@cart/OPEN_CLOSE_MODAL',
+  };
+}
+
+export function cleanCart() {
+  return {
+    type: '@cart/CLEAN_CART',
+  };
+}

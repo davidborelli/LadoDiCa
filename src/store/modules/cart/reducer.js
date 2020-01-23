@@ -3,6 +3,7 @@ import produce from 'immer';
 const INITIAL_STATE = {
   items: [],
   coupon: null,
+  modal: false,
 };
 
 export default function cart(state = INITIAL_STATE, action) {
@@ -34,6 +35,18 @@ export default function cart(state = INITIAL_STATE, action) {
       return produce(state, draft => {
         draft.coupon = action.payload;
       });
+
+    case '@cart/OPEN_CLOSE_MODAL':
+      return produce(state, draft => {
+        draft.modal = !draft.modal;
+      });
+
+    case '@cart/CLEAN_CART':
+      return produce(state, draft => {
+        draft.items = [];
+        draft.coupon = null;
+      });
+
     default:
       return state;
   }

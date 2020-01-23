@@ -3,6 +3,29 @@ import styled from 'styled-components';
 export const Container = styled.div`
   max-width: 900px;
   margin: 0 auto;
+
+  div.check-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    div.check-img {
+      width: 120px;
+    }
+
+    div.check-text {
+      border-left: 2px solid #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      width: 500px;
+
+      p {
+        text-align: center;
+      }
+    }
+  }
 `;
 
 export const Header = styled.div`

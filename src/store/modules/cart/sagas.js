@@ -9,28 +9,32 @@ import {
 import api from '~/services/api';
 
 function* addToCart({ payload }) {
-  const { id } = payload;
+  try {
+    const { id } = payload;
 
-  const productExists = yield select(state =>
-    state.cart.items.find(p => p.id === id)
-  );
+    const productExists = yield select(state =>
+      state.cart.items.find(p => p.id === id)
+    );
 
-  const currentAmount = productExists ? productExists.amount : 0;
-  const amount = currentAmount + 1;
+    const currentAmount = productExists ? productExists.amount : 0;
+    const amount = currentAmount + 1;
 
-  if (productExists) {
-    yield put(updateAmountSuccess(id, amount));
-  } else {
-    const response = yield call(api.get, `/products?id=${id}`);
+    if (productExists) {
+      yield put(updateAmountSuccess(id, amount));
+      toast.success('Produto adicionado ao carrinho!', { autoClose: 1500 });
+    } else {
+      const response = yield call(api.get, `/products?id=${id}`);
 
-    const data = {
-      ...response.data[0],
-      amount: 1,
-    };
+      const data = {
+        ...response.data[0],
+        amount: 1,
+      };
 
-    yield put(addToCartSuccess(data));
-
-    // history.push('/cart');
+      yield put(addToCartSuccess(data));
+      toast.success('Produto adicionado ao carrinho!', { autoClose: 1500 });
+    }
+  } catch (error) {
+    toast.error('Erro ao adicionar item no carrinho...', { autoClose: 1000 });
   }
 }
 

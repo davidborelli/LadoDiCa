@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
 
 import { MdLocalGroceryStore as Icon } from 'react-icons/md';
+import { addToCartRequest } from '~/store/modules/cart/actions';
+
 import Footer from '~/components/Footer';
 import { calculeDiscount } from '~/utils/format';
 
@@ -9,6 +12,7 @@ import * as S from './styles';
 import api from '~/services/api';
 
 export default function ProductDetail({ location }) {
+  const dispatch = useDispatch();
   const pdt = location.state.product;
 
   const [size, setSize] = useState('');
@@ -25,6 +29,10 @@ export default function ProductDetail({ location }) {
 
     loadProduct();
   }, [pdt.id]);
+
+  const handleComprar = () => {
+    dispatch(addToCartRequest(product.id));
+  };
 
   return (
     <>
@@ -93,7 +101,7 @@ export default function ProductDetail({ location }) {
               </div>
             )}
 
-            <button type="button">
+            <button type="button" onClick={handleComprar}>
               <span>Comprar</span>
               <Icon color="#fff" size={20} />
             </button>

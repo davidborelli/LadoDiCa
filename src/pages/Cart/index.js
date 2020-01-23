@@ -6,19 +6,26 @@ import { Trash } from 'styled-icons/evil/Trash';
 import { KeyboardArrowDown } from 'styled-icons/material/KeyboardArrowDown';
 import { KeyboardArrowUp } from 'styled-icons/material/KeyboardArrowUp';
 import { MoneyOff } from 'styled-icons/material/MoneyOff';
+import { CheckCircle } from 'styled-icons/boxicons-regular/CheckCircle';
 import { MdLocalGroceryStore as Icon } from 'react-icons/md';
 import {
   addCuponDiscountCartRequest,
   removeFromCart,
   updateAmountRequest,
+  openCloseModal,
+  cleanCart,
 } from '~/store/modules/cart/actions';
 
+import history from '~/services/history';
+
 import { calculeDiscount, strToMoney } from '~/utils/format';
+import Modal from '~/components/Modal';
 
 import * as S from './styles';
 
 export default function Cart() {
   const dispatch = useDispatch();
+  const modalOpenedOrClosed = useSelector(state => state.cart.modal);
 
   const [cuponDiscount, setCuponDiscount] = useState('');
 
@@ -79,6 +86,16 @@ export default function Cart() {
     dispatch(addCuponDiscountCartRequest(cuponDiscount));
   };
 
+  const handleCheckout = () => {
+    dispatch(openCloseModal());
+  };
+
+  const handleConfirm = () => {
+    dispatch(openCloseModal());
+    dispatch(cleanCart());
+    history.push('/');
+  };
+
   return (
     <S.Container>
       <S.Header>
@@ -88,7 +105,9 @@ export default function Cart() {
             ({cartItems.length} {cartItems.length === 1 ? 'item' : 'itens'})
           </span>
         </h1>
-        <button type="button">Finalizar Compra</button>
+        <button type="button" onClick={handleCheckout}>
+          Finalizar Compra
+        </button>
       </S.Header>
       <S.CartBody>
         <S.ProductTable>
@@ -190,10 +209,26 @@ export default function Cart() {
           <Icon size={15} />
           Continuar comprando
         </Link>
-        <button className="finish-buy" type="button">
+        <button className="finish-buy" type="button" onClick={handleCheckout}>
           Finalizar Compra
         </button>
       </S.PageFooter>
+      {modalOpenedOrClosed && (
+        <Modal fnOnClose={handleConfirm}>
+          <div className="check-container">
+            <div className="check-img">
+              <CheckCircle size={90} color="#74b667" />
+            </div>
+            <div className="check-text">
+              <h1>Compra realizada com sucesso!</h1>
+              <p>
+                Agradecemos pela preferência !! Agora falta pouco, em breve você
+                receberá seu produtinho Lado-DiCá!!
+              </p>
+            </div>
+          </div>
+        </Modal>
+      )}
     </S.Container>
   );
 }
