@@ -8,6 +8,9 @@ import { KeyboardArrowUp } from 'styled-icons/material/KeyboardArrowUp';
 import { MoneyOff } from 'styled-icons/material/MoneyOff';
 import { CheckCircle } from 'styled-icons/boxicons-regular/CheckCircle';
 import { MdLocalGroceryStore as Icon } from 'react-icons/md';
+
+import { toast } from 'react-toastify';
+
 import {
   addCuponDiscountCartRequest,
   removeFromCart,
@@ -82,7 +85,11 @@ export default function Cart() {
     dispatch(updateAmountRequest(cartItem.id, qtd));
   };
 
-  const handleCuponDiscount = async () => {
+  const handleCuponDiscount = () => {
+    if (cartItems.length === 0) {
+      toast.error('Para inserir cupom precisa ter itens no carrinho...');
+      return;
+    }
     dispatch(addCuponDiscountCartRequest(cuponDiscount));
   };
 
@@ -105,7 +112,11 @@ export default function Cart() {
             ({cartItems.length} {cartItems.length === 1 ? 'item' : 'itens'})
           </span>
         </h1>
-        <button type="button" onClick={handleCheckout}>
+        <button
+          hidden={!cartItems.length > 0}
+          type="button"
+          onClick={handleCheckout}
+        >
           Finalizar Compra
         </button>
       </S.Header>
@@ -209,7 +220,12 @@ export default function Cart() {
           <Icon size={15} />
           Continuar comprando
         </Link>
-        <button className="finish-buy" type="button" onClick={handleCheckout}>
+        <button
+          hidden={!cartItems.length > 0}
+          className="finish-buy"
+          type="button"
+          onClick={handleCheckout}
+        >
           Finalizar Compra
         </button>
       </S.PageFooter>
