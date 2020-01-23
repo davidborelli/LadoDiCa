@@ -53,3 +53,11 @@ Após o processo terminar execute o seguinte comando (também na raiz) para colo
 `node server.js`
 
 Se der tudo certo a página ficará disponível no endereço: http://localhost:3000/
+
+# Imagens da Loja
+
+![Screen Shot 2020-01-23 at 17 56 36](https://user-images.githubusercontent.com/21282437/73023348-1fa93780-3e0a-11ea-8a2e-027810bf4509.png)
+![Screen Shot 2020-01-23 at 17 57 09](https://user-images.githubusercontent.com/21282437/73023349-1fa93780-3e0a-11ea-9eae-35e5adf893b9.png)
+![Screen Shot 2020-01-23 at 17 57 47](https://user-images.githubusercontent.com/21282437/73023350-2041ce00-3e0a-11ea-92e2-e2f29125edb4.png)
+![Screen Shot 2020-01-23 at 17 58 22](https://user-images.githubusercontent.com/21282437/73023352-2041ce00-3e0a-11ea-9bde-8303bc8c5f99.png)
+![Screen Shot 2020-01-23 at 17 57 56](https://user-images.githubusercontent.com/21282437/73023351-2041ce00-3e0a-11ea-9aa5-83a37eeca5a9.png)
