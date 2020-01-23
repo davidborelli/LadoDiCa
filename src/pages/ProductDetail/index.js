@@ -104,7 +104,7 @@ export default function ProductDetail({ location }) {
           <h2>Detalhes</h2>
 
           <div className="text-detail">
-            <p>{product.description}</p>
+            <p className="wrapper">{product.description}</p>
           </div>
         </S.ProductDetail>
       </S.Container>

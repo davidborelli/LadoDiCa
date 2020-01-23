@@ -196,6 +196,10 @@ export const ProductDetail = styled.div`
     font-size: 16px;
     margin: 20px 0;
 
+    p {
+      white-space: pre-line;
+    }
+
     textarea {
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
