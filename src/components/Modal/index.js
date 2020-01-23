@@ -8,7 +8,7 @@ function Modal({ children, size, fnOnClose }) {
     <S.Container>
       <S.Content size={size}>
         {children}
-        <S.Button onClick={fnOnClose}>Cotinuar para o site</S.Button>
+        <S.Button onClick={fnOnClose}>Continuar para o site</S.Button>
       </S.Content>
     </S.Container>
   );
