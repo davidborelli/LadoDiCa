@@ -195,6 +195,19 @@ export const ProductDetail = styled.div`
   div.text-detail {
     font-size: 16px;
     margin: 20px 0;
+
+    p {
+      white-space: pre-line;
+    }
+
+    textarea {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+
+      width: 100%;
+      font-size: 16px;
+    }
   }
 `;
 

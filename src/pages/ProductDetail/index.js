@@ -1,15 +1,30 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
 import { MdLocalGroceryStore as Icon } from 'react-icons/md';
 import Footer from '~/components/Footer';
+import { calculeDiscount } from '~/utils/format';
 
 import * as S from './styles';
+import api from '~/services/api';
 
 export default function ProductDetail({ location }) {
+  const pdt = location.state.product;
+
   const [size, setSize] = useState('');
-  const [product] = useState(location.state.product);
+  const [product, setProduct] = useState(location.state.product);
   const [draftPhoto, setDraftPhoto] = useState(product.pics[0]);
+
+  useEffect(() => {
+    const loadProduct = async () => {
+      const response = await api.get(`/products?id=${pdt.id}`);
+
+      setProduct(response.data[0]);
+      setDraftPhoto(response.data[0].pics[0]);
+    };
+
+    loadProduct();
+  }, [pdt.id]);
 
   return (
     <>
@@ -37,9 +52,12 @@ export default function ProductDetail({ location }) {
 
             <div className="price-detail">
               <div className="price">
-                <span className="original-price">De: R$128,89</span>
+                <span className="original-price">De: R${product.price}</span>
                 <span className="current-price">
-                  Por: R$<strong>120,89</strong>
+                  Por: R$
+                  <strong>
+                    {calculeDiscount(product.price, product.discount)}
+                  </strong>
                 </span>
               </div>
               <div className="division">
@@ -48,7 +66,9 @@ export default function ProductDetail({ location }) {
                 <span>|</span>
               </div>
               <div className="card">
-                <span className="card-price">R$119,19</span>
+                <span className="card-price">
+                  R${calculeDiscount(product.price, product.discount)}
+                </span>
                 <span className="card-description">no cartão à vista</span>
               </div>
             </div>
@@ -83,7 +103,9 @@ export default function ProductDetail({ location }) {
         <S.ProductDetail>
           <h2>Detalhes</h2>
 
-          <div className="text-detail">{product.description}</div>
+          <div className="text-detail">
+            <p className="wrapper">{product.description}</p>
+          </div>
         </S.ProductDetail>
       </S.Container>
       <Footer />
