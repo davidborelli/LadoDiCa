@@ -49,7 +49,10 @@ Para utilizar o recurso de buscas, como o [JSON-SERVER](https://github.com/typic
 Após o Download do repositório, na raiz da pasta executar o comando para instalar todas as dependências: </br>
 `npm install`
 
-Após o processo terminar execute o seguinte comando (também na raiz) para colocar no ar o JSON-SERVER:</br>
+Após o processo terminar execute o seguinte comando (também na raiz) para colocar sistema da loja no ar:</br>
+`npm start`
+
+Depois para colocar no ar o JSON-SERVER:</br>
 `node server.js`
 
 Se der tudo certo a página ficará disponível no endereço: http://localhost:3000/
