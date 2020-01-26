@@ -42,7 +42,7 @@ Desenvolvido em React e utilizando Redux e Redux-Saga, a loja virtual LadoDiCá 
 Como fonte de dados foi utilizado o [JSON-SERVER](https://github.com/typicode/json-server) ele disponibiliza um MOCK de dados previamente cadastrados, como se fosse uma API, onde a aplicação pode fazer requisições utilizando os verbos HTTP; </br>
 Para utilizar o recurso de buscas, como o [JSON-SERVER](https://github.com/typicode/json-server) não possui o recurso para buscar por um campo OU outro, foi adicionado um middleware (de acordo com a documentação), onde a requisição POST é recebida e processada, e retorna os dados encontrados.
 
-> O arquivo JSON onde estão cadastrados os produtos, estão no diretório /json-server/db.json
+> O arquivo JSON onde estão cadastrados os produtos, está no diretório /json-server/db.json
 
 # Como executar o projeto
 
